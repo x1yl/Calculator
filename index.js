@@ -8,6 +8,7 @@ function calculator(option) {
   } else if (option == "calculation") {
     navigator.clipboard.writeText(calculation);
   } else if (option == "theme") {
+    ;
   } else {
     calculation += option;
   }
