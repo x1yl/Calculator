@@ -1,14 +1,17 @@
 let calculation = "";
 const calculationSpan = document.getElementById("calculation");
+const css = document.getElementById("css");
+
 function calculator(option) {
-  if (option == "=") {
+  if (option === "=") {
     calculation = eval(calculation);
-  } else if (option == "clear") {
+  } else if (option === "clear") {
     calculation = "";
-  } else if (option == "calculation") {
+  } else if (option === "copy") {
     navigator.clipboard.writeText(calculation);
-  } else if (option == "theme") {
-    ;
+  } else if (option === "theme") {
+    // Handle theme switching logic here
+    // You can modify the CSS href based on the selected theme
   } else {
     calculation += option;
   }
@@ -21,13 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
       calculator(button.id);
     });
   });
-});
-document.getElementById("theme").addEventListener("click", function () {
-  if (document.getElementById("css").href == location + "light.css") {
-    document.getElementById("css").href = "dark.css";
-    document.getElementById("theme").innerHTML = "Light Theme";
-  } else {
-    document.getElementById("css").href = "light.css";
-    document.getElementById("theme").innerHTML = "Dark Theme";
-  }
+  
+  const dropdown = document.getElementById('dropdown');
+  dropdown.addEventListener('change', function() {
+    css.href = dropdown.value + ".css";
+  });
 });
