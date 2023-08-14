@@ -27,6 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
   const dropdown = document.getElementById('dropdown');
   dropdown.addEventListener('change', function() {
-    css.href = dropdown.value + ".css";
+    css.href = "themes/" + dropdown.value + ".css";
   });
 });
