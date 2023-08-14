@@ -27,12 +27,14 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #006633; /* Dark Green */
+  background-color: #006633;
+  /* Dark Green */
   color: #fff;
 }
 
 .calculator button:hover {
-  background-color: #008040; /* Dark Green (hover) */
+  background-color: #008040;
+  /* Dark Green (hover) */
 }
 
 select {

@@ -27,12 +27,14 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #660066; /* Dark Purple */
+  background-color: #660066;
+  /* Dark Purple */
   color: #fff;
 }
 
 .calculator button:hover {
-  background-color: #800080; /* Dark Purple (hover) */
+  background-color: #800080;
+  /* Dark Purple (hover) */
 }
 
 select {

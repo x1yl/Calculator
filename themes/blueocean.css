@@ -40,21 +40,20 @@ body {
 }
 
 select {
-    border: none;
-    background: transparent;
-    padding: 8px;
-    font-size: 16px;
-    cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 select#dropdown {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 option {
-    background-color: #fff;
-    color: #333;
-    padding: 8px;
+  background-color: #fff;
+  color: #333;
+  padding: 8px;
 }
-
