@@ -7,6 +7,7 @@ function calculator(option) {
     calculation = "";
   } else if (option == "calculation") {
     navigator.clipboard.writeText(calculation);
+  } else if (option == "theme") {
   } else {
     calculation += option;
   }
@@ -19,4 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
       calculator(button.id);
     });
   });
+});
+document.getElementById("theme").addEventListener("click", function () {
+  if (document.getElementById("css").href == location + "light.css") {
+    document.getElementById("css").href = "dark.css";
+    document.getElementById("theme").innerHTML = "Light Theme";
+  } else {
+    document.getElementById("css").href = "light.css";
+    document.getElementById("theme").innerHTML = "Dark Theme";
+  }
 });
